@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Logo Image -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="300dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="44dp"
+            android:src="@drawable/login_logo"
+            android:contentDescription="App Logo"
+            tools:ignore="HardcodedText" />
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Student MIS"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Subheading -->
+        <TextView
+            android:id="@+id/subheadingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LET ACCESS ALL WORK FROM HERE"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="24dp"
+            tools:ignore="HardcodedText" />
+
+
+        <!-- Email Address Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                tools:ignore="HardcodedText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                tools:ignore="HardcodedText" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- Login Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="50dp"
+            app:elevation="4dp"
+            app:rippleColor="@color/white"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
+            tools:ignore="HardcodedText" />
+
+
+        <!-- Illustration Image -->
+        <ImageView
+            android:id="@+id/illustrationImageView"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="42dp"
+            android:contentDescription="Illustration Image"
+            android:scaleType="centerInside"
+            android:src="@drawable/login_pic"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</ScrollView>
